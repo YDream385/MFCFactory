@@ -60,6 +60,30 @@
     <ClInclude Include="FatoryControlWnd.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="ControlDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ControlGroup.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ControlWnd.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ControlXml.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="EditEx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ListWnd.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Markup.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="TreeWnd.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="MFCFactory.cpp">
@@ -96,6 +120,30 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="FatoryControlWnd.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ControlDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ControlGroup.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ControlWnd.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ControlXml.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="EditEx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ListWnd.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Markup.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="TreeWnd.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

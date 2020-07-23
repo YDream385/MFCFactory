@@ -75,6 +75,7 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(SolutionDir)\UIFactoryLib;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
@@ -96,6 +97,7 @@
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>..\Debug\UIFactoryLib.lib</AdditionalDependencies>
     </Link>
     <Midl>
       <MkTypLibCompatible>false</MkTypLibCompatible>
@@ -191,9 +193,16 @@
   <ItemGroup>
     <ClInclude Include="ChildFrm.h" />
     <ClInclude Include="ClassView.h" />
+    <ClInclude Include="ControlDlg.h" />
+    <ClInclude Include="ControlGroup.h" />
+    <ClInclude Include="ControlWnd.h" />
+    <ClInclude Include="ControlXml.h" />
+    <ClInclude Include="EditEx.h" />
     <ClInclude Include="FatoryControlWnd.h" />
     <ClInclude Include="FileView.h" />
+    <ClInclude Include="ListWnd.h" />
     <ClInclude Include="MainFrm.h" />
+    <ClInclude Include="Markup.h" />
     <ClInclude Include="MFCFactory.h" />
     <ClInclude Include="MFCFactoryDoc.h" />
     <ClInclude Include="MFCFactoryView.h" />
@@ -202,14 +211,22 @@
     <ClInclude Include="Resource.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
+    <ClInclude Include="TreeWnd.h" />
     <ClInclude Include="ViewTree.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ChildFrm.cpp" />
     <ClCompile Include="ClassView.cpp" />
+    <ClCompile Include="ControlDlg.cpp" />
+    <ClCompile Include="ControlGroup.cpp" />
+    <ClCompile Include="ControlWnd.cpp" />
+    <ClCompile Include="ControlXml.cpp" />
+    <ClCompile Include="EditEx.cpp" />
     <ClCompile Include="FatoryControlWnd.cpp" />
     <ClCompile Include="FileView.cpp" />
+    <ClCompile Include="ListWnd.cpp" />
     <ClCompile Include="MainFrm.cpp" />
+    <ClCompile Include="Markup.cpp" />
     <ClCompile Include="MFCFactory.cpp" />
     <ClCompile Include="MFCFactoryDoc.cpp" />
     <ClCompile Include="MFCFactoryView.cpp" />
@@ -221,6 +238,7 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="TreeWnd.cpp" />
     <ClCompile Include="ViewTree.cpp" />
   </ItemGroup>
   <ItemGroup>

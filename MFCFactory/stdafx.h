@@ -33,7 +33,8 @@
 
 #include <afxcontrolbars.h>     // 功能区和控件条的 MFC 支持
 
-
+#define IDC_CONTROL_TREE_CTRL           500
+#define IDC_CONTROL_LIST_BOX            501
 
 
 
