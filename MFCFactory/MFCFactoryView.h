@@ -3,7 +3,7 @@
 //
 
 #pragma once
-
+#include "FatoryControlWnd.h"
 
 class CMFCFactoryView : public CView
 {
@@ -19,7 +19,7 @@ public:
 public:
 
 // 重写
-public:
+public:	
 	virtual void OnDraw(CDC* pDC);  // 重写以绘制该视图
 	virtual BOOL PreCreateWindow(CREATESTRUCT& cs);
 protected:
@@ -36,12 +36,14 @@ public:
 #endif
 
 protected:
-
+	CFatoryControlWnd m_wndFatoryControl;
 // 生成的消息映射函数
-protected:
+protected:	
 	afx_msg void OnFilePrintPreview();
 	afx_msg void OnRButtonUp(UINT nFlags, CPoint point);
 	afx_msg void OnContextMenu(CWnd* pWnd, CPoint point);
+	afx_msg int  OnCreate(LPCREATESTRUCT lpCreateStruct);
+	afx_msg void OnSize(UINT nType, int cx, int cy);
 	DECLARE_MESSAGE_MAP()
 };
 

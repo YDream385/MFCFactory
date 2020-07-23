@@ -28,14 +28,14 @@ BEGIN_MESSAGE_MAP(CMFCFactoryView, CView)
 	ON_COMMAND(ID_FILE_PRINT_PREVIEW, &CMFCFactoryView::OnFilePrintPreview)
 	ON_WM_CONTEXTMENU()
 	ON_WM_RBUTTONUP()
+	ON_WM_CREATE()
+	ON_WM_SIZE()
 END_MESSAGE_MAP()
 
 // CMFCFactoryView 构造/析构
 
 CMFCFactoryView::CMFCFactoryView()
 {
-	// TODO: 在此处添加构造代码
-
 }
 
 CMFCFactoryView::~CMFCFactoryView()
@@ -125,3 +125,28 @@ CMFCFactoryDoc* CMFCFactoryView::GetDocument() const // 非调试版本是内联的
 
 
 // CMFCFactoryView 消息处理程序
+int CMFCFactoryView::OnCreate(LPCREATESTRUCT lpCreateStruct)
+{
+	if (CView::OnCreate(lpCreateStruct) == -1)
+		return -1;
+
+	m_wndFatoryControl.Create(IDD_CONTROL_WND, this);
+
+	return 0;
+}
+
+void CMFCFactoryView::OnSize(UINT nType, int cx, int cy)
+{
+	CView::OnSize(nType, cx, cy);
+
+	// Resize and reposition the control dialog.
+	if (m_wndFatoryControl.GetSafeHwnd() != NULL && 
+		::IsWindow(m_wndFatoryControl.GetSafeHwnd()))
+	{
+		CRect rect;
+		GetClientRect(&rect);
+
+		m_wndFatoryControl.SetWindowPos(NULL, rect.left, rect.top,
+			rect.Width(), rect.Height(), SWP_NOZORDER | SWP_NOACTIVATE);
+	}
+}

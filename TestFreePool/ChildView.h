@@ -34,7 +34,7 @@ protected:
     DECLARE_MESSAGE_MAP()
         
 private:
-    CControlWnd* m_controlWnd;
+	CFatoryControlWnd* m_controlWnd;
 };
 
 #endif // CHILD_VIEW_INCLUDED

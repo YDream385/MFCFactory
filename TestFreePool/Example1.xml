@@ -85,7 +85,7 @@
             Text="12. WebBrowser"></Label>
         <WebBrowser Name="WebBrowser1" Visible="true" Enabled="true" 
             LocationX="200" LocationY="55" SizeWidth="300" SizeHeight="160"
-            Url="http://www.codeproject.com"></WebBrowser>
+            Url="https://github.com"></WebBrowser>
       </Controls>
     </ControlGroup>
   </ControlGroups>
