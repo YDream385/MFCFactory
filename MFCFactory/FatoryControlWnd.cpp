@@ -48,8 +48,12 @@ BOOL CFatoryControlWnd::OnInitDialog()
 	if (!status)
 		return FALSE;
 
-	OpenXmlFile(_T("D:\\work\\MFCFactory\\TestFreePool\\Example1.xml"));
-
+/*
+	CMainFrame* pMainFrame = STATIC_DOWNCAST(CMainFrame, AfxGetMainWnd());
+	CMDIChildWnd *pChild = (CMDIChildWnd *)pMainFrame->GetActiveFrame();
+	CMFCFactoryDoc* pDoc = (CMFCFactoryDoc*)pChild->GetActiveDocument();
+*/
+	
 	return TRUE;  // return TRUE unless you set the focus to a control
 				  // 异常: OCX 属性页应返回 FALSE
 }

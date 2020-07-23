@@ -11,6 +11,7 @@
 
 #include "MFCFactoryDoc.h"
 #include "MFCFactoryView.h"
+#include <corecrt_io.h>
 
 #ifdef _DEBUG
 #define new DEBUG_NEW
@@ -130,7 +131,7 @@ int CMFCFactoryView::OnCreate(LPCREATESTRUCT lpCreateStruct)
 	if (CView::OnCreate(lpCreateStruct) == -1)
 		return -1;
 
-	m_wndFatoryControl.Create(IDD_CONTROL_WND, this);
+	
 
 	return 0;
 }
@@ -149,4 +150,21 @@ void CMFCFactoryView::OnSize(UINT nType, int cx, int cy)
 		m_wndFatoryControl.SetWindowPos(NULL, rect.left, rect.top,
 			rect.Width(), rect.Height(), SWP_NOZORDER | SWP_NOACTIVATE);
 	}
+}
+
+void CMFCFactoryView::OnInitialUpdate()
+{
+	CView::OnInitialUpdate();
+
+	CMFCFactoryDoc* pDoc = GetDocument();
+	ASSERT_VALID(pDoc);
+	if (!pDoc)
+		return;
+
+	CString strXml = pDoc->GetPathName();
+	if (strXml != _T("") && _access((char *)strXml.GetBuffer(0), 0))
+	{
+		m_wndFatoryControl.Create(IDD_CONTROL_WND, this);
+		m_wndFatoryControl.OpenXmlFile(strXml);
+	}	
 }
