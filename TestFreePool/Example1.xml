@@ -1,0 +1,92 @@
+<?xml version="1.0" ?>
+<ControlWnd>
+  <ControlGroups>
+    <ControlGroup Name="Group A">
+      <Controls>
+        <Label Name="Label1" Visible="true" Enabled="true" 
+            LocationX="30" LocationY="30" SizeWidth="100" SizeHeight="20"
+            Text="1. Button"></Label>
+        <Button Name="Button1" Visible="true" Enabled="true" 
+            LocationX="30" LocationY="55" SizeWidth="100" SizeHeight="24"
+            Text="My Button"></Button>
+        <Label Name="Label2" Visible="true" Enabled="true" 
+            LocationX="30" LocationY="95" SizeWidth="100" SizeHeight="20"
+            Text="2. CheckBox"></Label>
+        <CheckBox Name="CheckBox1" Visible="true" Enabled="true" 
+            LocationX="30" LocationY="115" SizeWidth="200" SizeHeight="24"
+            Text="My Check Box" Checked="true"></CheckBox>
+        <Label Name="Label3" Visible="true" Enabled="true" 
+            LocationX="30" LocationY="160" SizeWidth="100" SizeHeight="20"
+            Text="3. ComboBox"></Label>
+        <ComboBox Name="ComboBox1" Visible="true" Enabled="true" 
+            LocationX="30" LocationY="185" SizeWidth="130" SizeHeight="100"
+            Items="Combo Item 1|Combo Item 2|Combo Item 3" SelectedIndex="1"></ComboBox>
+        <Label Name="Label4" Visible="true" Enabled="true" 
+            LocationX="30" LocationY="225" SizeWidth="100" SizeHeight="20"
+            Text="4. GroupBox"></Label>
+        <GroupBox Name="GroupBox1" Visible="true" Enabled="true" 
+            LocationX="30" LocationY="250" SizeWidth="160" SizeHeight="60"
+            Text="My Group Box"></GroupBox>        
+      </Controls>
+    </ControlGroup>
+    <ControlGroup Name="Group B">
+      <Controls>
+        <Label Name="Label5" Visible="true" Enabled="true" 
+            LocationX="30" LocationY="30" SizeWidth="100" SizeHeight="20"
+            Text="5. IpAddress"></Label>
+        <IpAddress Name="IpAddress1" Visible="true" Enabled="true" 
+            LocationX="30" LocationY="55" SizeWidth="200" SizeHeight="24"
+            IP="172.1.2.200"></IpAddress>        
+        <Label Name="Label6" Visible="true" Enabled="true" 
+            LocationX="30" LocationY="95" SizeWidth="100" SizeHeight="20"
+            Text="6. Label"></Label>
+        <Label Name="LabelB1" Visible="true" Enabled="true" 
+            LocationX="30" LocationY="120" SizeWidth="160" SizeHeight="18"
+            Text="This is a label."></Label>        
+        <Label Name="Label7" Visible="true" Enabled="true" 
+            LocationX="30" LocationY="160" SizeWidth="100" SizeHeight="20"
+            Text="7. ListBox"></Label>
+        <ListBox Name="ListBox1" Visible="true" Enabled="true" 
+            LocationX="30" LocationY="185" SizeWidth="200" SizeHeight="100"
+            Items="List Item 1|List Item 2|List Item 3" SelectedIndex="1"></ListBox>        
+        <Label Name="Label8" Visible="true" Enabled="true" 
+            LocationX="30" LocationY="300" SizeWidth="100" SizeHeight="20"
+            Text="8. RadioButton"></Label>
+        <RadioButton Name="RadioButton1" Visible="true" Enabled="true" 
+            LocationX="30" LocationY="325" SizeWidth="120" SizeHeight="24"
+            Text="Radio Option 1" Checked="false"></RadioButton>
+        <RadioButton Name="RadioButton2" Visible="true" Enabled="true" 
+            LocationX="150" LocationY="325" SizeWidth="120" SizeHeight="24"
+            Text="Radio Option 2" Checked="true" RadioManager="RadioButton1"></RadioButton>
+      </Controls>      
+    </ControlGroup>
+    <ControlGroup Name="Group C">
+      <Controls>
+        <Label Name="Label9" Visible="true" Enabled="true" 
+            LocationX="30" LocationY="30" SizeWidth="100" SizeHeight="20"
+            Text="9. SpinButton"></Label>
+        <SpinButton Name="SpinButton1" Visible="true" Enabled="true" 
+            LocationX="30" LocationY="55" SizeWidth="20" SizeHeight="40"
+            Minimum="0" Maximum="100" Value="50"></SpinButton>        
+        <Label Name="Label10" Visible="true" Enabled="true" 
+            LocationX="30" LocationY="110" SizeWidth="100" SizeHeight="20"
+            Text="10. TextBox"></Label>
+        <TextBox Name="TextBox1" Visible="true" Enabled="true" ReadOnly="false"
+            LocationX="30" LocationY="130" SizeWidth="150" SizeHeight="24"
+            Text="My Text Box"></TextBox>        
+        <Label Name="Label1" Visible="true" Enabled="true" 
+            LocationX="30" LocationY="185" SizeWidth="100" SizeHeight="20"
+            Text="11. TrackBar"></Label>
+        <TrackBar Name="TrackBar1" Visible="true" Enabled="true" 
+            LocationX="30" LocationY="210" SizeWidth="150" SizeHeight="30"
+            Minimum="0" Maximum="100" Value="50" TickFrequency="10"></TrackBar>        
+        <Label Name="Label2" Visible="true" Enabled="true" 
+            LocationX="200" LocationY="30" SizeWidth="100" SizeHeight="20"
+            Text="12. WebBrowser"></Label>
+        <WebBrowser Name="WebBrowser1" Visible="true" Enabled="true" 
+            LocationX="200" LocationY="55" SizeWidth="300" SizeHeight="160"
+            Url="http://www.codeproject.com"></WebBrowser>
+      </Controls>
+    </ControlGroup>
+  </ControlGroups>
+</ControlWnd>

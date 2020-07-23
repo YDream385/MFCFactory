@@ -1,0 +1,31 @@
+===================
+Adding New Controls
+===================
+
+Below are the steps for adding new control support to the Dynamic UI
+and Control Surface layers. We assume that you have a CWnd-derived
+class that you wish to support. This could be a native MFC control,
+an ActiveX wrapper, or a custom CWnd class.
+
+1. Implement a new CWndControl-derived class in WndControl.h/.cpp.
+   This should be a simple wrapper class whose main purpose is to
+   maintain state. Just follow the example of the classes which
+   have already been coded.
+
+2. Add two static functions to WndFactory.cpp. One function for
+   creating a new instance of the CWnd-derived class. And another
+   function for creating a new instance of the CWndControl-derived
+   class. These two functions must be registered in the CWndFactory
+   constructor.
+   
+3. Implement a new ParseControl_XXX static method in ControlXml.h/.cpp.
+   Register the method in the CControlXml constructor.
+   
+4. Add an entry for the new control to Example1.xml (which shows all of
+   the currently supported controls) for testing purposes.
+   
+===
+END
+===
+
+   

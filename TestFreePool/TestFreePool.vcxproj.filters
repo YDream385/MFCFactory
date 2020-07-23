@@ -1,0 +1,216 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{f34e2991-aed7-4a21-9511-b675a4dc655c}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{35cfb0c5-0581-4aee-8f94-e0207f88f504}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{a3619fd4-3fca-4e9c-b974-cc203946e2e6}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+    <Filter Include="1. Dynamic UI">
+      <UniqueIdentifier>{2958ef6c-da42-4097-b5ec-7fee3a25a1de}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="1. Dynamic UI\CWndFreePool">
+      <UniqueIdentifier>{1e83748d-54d3-4a52-83cc-ebb9d204d8d8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="1. Dynamic UI\CWndFactory">
+      <UniqueIdentifier>{649bd7f8-81d1-41c5-8db1-4484b81cd241}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="1. Dynamic UI\CWndControl">
+      <UniqueIdentifier>{64b99222-b781-48b7-a431-f1edf26a30fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="1. Dynamic UI\CWndEvent">
+      <UniqueIdentifier>{bf8db546-b5bc-476e-a78c-2326535bd235}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="1. Dynamic UI\CWndContainer">
+      <UniqueIdentifier>{1e2840af-baed-44cd-9b03-ffe0909f3d26}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2. Control Surface">
+      <UniqueIdentifier>{20a731ba-11b2-43e7-9569-58115c846ab8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2. Control Surface\CControlDlg">
+      <UniqueIdentifier>{7be35707-cc3f-4d1e-9e39-f6230142a8b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2. Control Surface\CControlGroup">
+      <UniqueIdentifier>{c9d331b0-f5e3-4479-9d64-73fe315e4748}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2. Control Surface\CControlWnd">
+      <UniqueIdentifier>{5ac2726e-7455-40fe-9517-4ebe77adac04}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2. Control Surface\CControlXml">
+      <UniqueIdentifier>{3b9307f9-1b3a-4593-87a8-ace1cfe1a5a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2. Control Surface\CListWnd">
+      <UniqueIdentifier>{5b6ace59-51b7-4186-ac1c-0fd04d364713}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2. Control Surface\CMarkup">
+      <UniqueIdentifier>{b92bf260-41b7-4cf2-b362-044de6c68a30}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2. Control Surface\CTreeWnd">
+      <UniqueIdentifier>{0f0443e0-caa0-4cfc-8f88-acc8fd0768a6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3. XML Files">
+      <UniqueIdentifier>{70d42272-f958-466a-af78-440cde7cc83b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ChildFrm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ChildView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MainFrm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StdAfx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TestFreePool.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="WndFreePool.cpp">
+      <Filter>1. Dynamic UI\CWndFreePool</Filter>
+    </ClCompile>
+    <ClCompile Include="WndFactory.cpp">
+      <Filter>1. Dynamic UI\CWndFactory</Filter>
+    </ClCompile>
+    <ClCompile Include="EditEx.cpp">
+      <Filter>1. Dynamic UI\CWndControl</Filter>
+    </ClCompile>
+    <ClCompile Include="webbrowser2.cpp">
+      <Filter>1. Dynamic UI\CWndControl</Filter>
+    </ClCompile>
+    <ClCompile Include="WndControl.cpp">
+      <Filter>1. Dynamic UI\CWndControl</Filter>
+    </ClCompile>
+    <ClCompile Include="WndEvent.cpp">
+      <Filter>1. Dynamic UI\CWndEvent</Filter>
+    </ClCompile>
+    <ClCompile Include="WndContainer.cpp">
+      <Filter>1. Dynamic UI\CWndContainer</Filter>
+    </ClCompile>
+    <ClCompile Include="ControlDlg.cpp">
+      <Filter>2. Control Surface\CControlDlg</Filter>
+    </ClCompile>
+    <ClCompile Include="ControlGroup.cpp">
+      <Filter>2. Control Surface\CControlGroup</Filter>
+    </ClCompile>
+    <ClCompile Include="ControlWnd.cpp">
+      <Filter>2. Control Surface\CControlWnd</Filter>
+    </ClCompile>
+    <ClCompile Include="ControlXml.cpp">
+      <Filter>2. Control Surface\CControlXml</Filter>
+    </ClCompile>
+    <ClCompile Include="ListWnd.cpp">
+      <Filter>2. Control Surface\CListWnd</Filter>
+    </ClCompile>
+    <ClCompile Include="Markup.cpp">
+      <Filter>2. Control Surface\CMarkup</Filter>
+    </ClCompile>
+    <ClCompile Include="TreeWnd.cpp">
+      <Filter>2. Control Surface\CTreeWnd</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="TestFreePool.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ChildFrm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ChildView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MainFrm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StdAfx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TestFreePool.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="WndFreePool.h">
+      <Filter>1. Dynamic UI\CWndFreePool</Filter>
+    </ClInclude>
+    <ClInclude Include="WndFactory.h">
+      <Filter>1. Dynamic UI\CWndFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="EditEx.h">
+      <Filter>1. Dynamic UI\CWndControl</Filter>
+    </ClInclude>
+    <ClInclude Include="webbrowser2.h">
+      <Filter>1. Dynamic UI\CWndControl</Filter>
+    </ClInclude>
+    <ClInclude Include="WndControl.h">
+      <Filter>1. Dynamic UI\CWndControl</Filter>
+    </ClInclude>
+    <ClInclude Include="WndEvent.h">
+      <Filter>1. Dynamic UI\CWndEvent</Filter>
+    </ClInclude>
+    <ClInclude Include="WndContainer.h">
+      <Filter>1. Dynamic UI\CWndContainer</Filter>
+    </ClInclude>
+    <ClInclude Include="ControlDlg.h">
+      <Filter>2. Control Surface\CControlDlg</Filter>
+    </ClInclude>
+    <ClInclude Include="ControlGroup.h">
+      <Filter>2. Control Surface\CControlGroup</Filter>
+    </ClInclude>
+    <ClInclude Include="ControlWnd.h">
+      <Filter>2. Control Surface\CControlWnd</Filter>
+    </ClInclude>
+    <ClInclude Include="ControlXml.h">
+      <Filter>2. Control Surface\CControlXml</Filter>
+    </ClInclude>
+    <ClInclude Include="ListWnd.h">
+      <Filter>2. Control Surface\CListWnd</Filter>
+    </ClInclude>
+    <ClInclude Include="Markup.h">
+      <Filter>2. Control Surface\CMarkup</Filter>
+    </ClInclude>
+    <ClInclude Include="TreeWnd.h">
+      <Filter>2. Control Surface\CTreeWnd</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\TestFreePool.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Toolbar.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="Example1.xml">
+      <Filter>3. XML Files</Filter>
+    </Xml>
+    <Xml Include="Example2.xml">
+      <Filter>3. XML Files</Filter>
+    </Xml>
+    <Xml Include="Example3.xml">
+      <Filter>3. XML Files</Filter>
+    </Xml>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="AddingNewControls.txt" />
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="res\TestFreePool.rc2">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>
