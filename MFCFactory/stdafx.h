@@ -37,10 +37,15 @@
 #define IDC_CONTROL_LIST_BOX            501
 
 
+#include "MFCEditCtrl.h"
+#include "MFCEditView.h"
+#include "MFCIntelliSenseLB.h"
+#include "MFCIntelliSenseWnd.h"
+#include "MFCOutlineParser.h"
 
 
-
-
+#pragma comment(lib, "UIFactoryLib.lib")
+#pragma comment(lib, "MFCEditViewLib.lib")
 
 #ifdef _UNICODE
 #if defined _M_IX86

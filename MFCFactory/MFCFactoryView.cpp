@@ -17,15 +17,14 @@
 #define new DEBUG_NEW
 #endif
 
-
 // CMFCFactoryView
 
-IMPLEMENT_DYNCREATE(CMFCFactoryView, CView)
+IMPLEMENT_DYNCREATE(CMFCFactoryView, CMFCEditView)
 
-BEGIN_MESSAGE_MAP(CMFCFactoryView, CView)
+BEGIN_MESSAGE_MAP(CMFCFactoryView, CMFCEditView)
 	// 标准打印命令
-	ON_COMMAND(ID_FILE_PRINT, &CView::OnFilePrint)
-	ON_COMMAND(ID_FILE_PRINT_DIRECT, &CView::OnFilePrint)
+	ON_COMMAND(ID_FILE_PRINT, &CMFCEditView::OnFilePrint)
+	ON_COMMAND(ID_FILE_PRINT_DIRECT, &CMFCEditView::OnFilePrint)
 	ON_COMMAND(ID_FILE_PRINT_PREVIEW, &CMFCFactoryView::OnFilePrintPreview)
 	ON_WM_CONTEXTMENU()
 	ON_WM_RBUTTONUP()
@@ -109,12 +108,12 @@ void CMFCFactoryView::OnContextMenu(CWnd* /* pWnd */, CPoint point)
 #ifdef _DEBUG
 void CMFCFactoryView::AssertValid() const
 {
-	CView::AssertValid();
+	CMFCEditView::AssertValid();
 }
 
 void CMFCFactoryView::Dump(CDumpContext& dc) const
 {
-	CView::Dump(dc);
+	CMFCEditView::Dump(dc);
 }
 
 CMFCFactoryDoc* CMFCFactoryView::GetDocument() const // 非调试版本是内联的
@@ -128,17 +127,16 @@ CMFCFactoryDoc* CMFCFactoryView::GetDocument() const // 非调试版本是内联的
 // CMFCFactoryView 消息处理程序
 int CMFCFactoryView::OnCreate(LPCREATESTRUCT lpCreateStruct)
 {
-	if (CView::OnCreate(lpCreateStruct) == -1)
+	if (CMFCEditView::OnCreate(lpCreateStruct) == -1)
 		return -1;
 
-	
 
 	return 0;
 }
 
 void CMFCFactoryView::OnSize(UINT nType, int cx, int cy)
 {
-	CView::OnSize(nType, cx, cy);
+	CMFCEditView::OnSize(nType, cx, cy);
 
 	// Resize and reposition the control dialog.
 	if (m_wndFatoryControl.GetSafeHwnd() != NULL && 
@@ -154,7 +152,7 @@ void CMFCFactoryView::OnSize(UINT nType, int cx, int cy)
 
 void CMFCFactoryView::OnInitialUpdate()
 {
-	CView::OnInitialUpdate();
+	CMFCEditView::OnInitialUpdate();
 
 	CMFCFactoryDoc* pDoc = GetDocument();
 	ASSERT_VALID(pDoc);
@@ -164,7 +162,7 @@ void CMFCFactoryView::OnInitialUpdate()
 	CString strXml = pDoc->GetPathName();
 	if (strXml != _T("") && _access((char *)strXml.GetBuffer(0), 0))
 	{
-		m_wndFatoryControl.Create(IDD_CONTROL_WND, this);
+		m_wndFatoryControl.Create(IDD_CONTROL_WND, this->GetParent());
 		m_wndFatoryControl.OpenXmlFile(strXml);
 	}	
 }

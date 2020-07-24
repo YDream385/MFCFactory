@@ -5,7 +5,7 @@
 #pragma once
 #include "FatoryControlWnd.h"
 
-class CMFCFactoryView : public CView
+class CMFCFactoryView : public CMFCEditView
 {
 protected: // 仅从序列化创建
 	CMFCFactoryView();
